@@ -1,16 +1,16 @@
-import sys
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 
-print("Output from Python")
-print("Nome: " + sys.argv[1])
-print("Cargo: " + sys.argv[2])
-print("Tel: " + sys.argv[3])
 
-nome = sys.argv[1]
-cargo = sys.argv[2]
-telefone = sys.argv[3]
+arquivo = open("nomeAss.txt", "r")
+
+
+print(arquivo.readlines())
+
+nome = input('Nome:  ')
+cargo = input('Cargo: ')
+telefone = input('Telefone:')
 
 img = Image.open("modelVazio.png")
 draw = ImageDraw.Draw(img)
