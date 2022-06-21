@@ -13,19 +13,32 @@
 // const child = spawn("python", ["main.py"]);
 // child.on("exit", (code) => console.log("exitCode:", code));
 
-
+//importing dependencies
 var express = require('express');
 var app = express();
+var bodyParser=require("body-parser");
+
+
+//middlewares
+app.use(bodyParser.urlencoded({extended:true}));
+
 app.listen(3000, function () {
     console.log('server running on port 3000');
 })
-app.get('/name', callName);
 
-var nome = 'Kaic Murilo Nunes';
-var cargo = 'Dev';
+//ROTAS
+app.get('/name', callName);
+app.get("/",function(req,res){
+    res.send('rota de envio')
+});
+  
+
+var nome = 'Joao Teste';
+var cargo = 'Deve';
 var ramal = '3041-8785';
 
 function callName(req, res) {
+    
     var spawn = require("child_process").spawn;
     var process = spawn('python', ["./main.py",
         nome,

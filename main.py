@@ -3,6 +3,9 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 
+
+##pip instalar pillow
+
 print("Output from Python")
 print("Nome: " + sys.argv[1])
 print("Cargo: " + sys.argv[2])
