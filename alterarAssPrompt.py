@@ -24,6 +24,17 @@ import sys
 # draw.text((805, 149), cargo, (255, 255, 255), font=font2)
 # draw.text((893, 250), telefone, (255, 255, 255), font=font3)
 # img.save(nome+'.png')
+password='ptmb44hp'
+
+
+passwordConfirm = input('Pass:  ')
+while passwordConfirm != password:
+    passwordConfirm = input('Pass:  ')
+    if password == passwordConfirm:
+        print('Aproveite o uso!')
+    else:
+        print('Uso restrito para colaboradores com permissão!')
+
 
 n = 0
 
