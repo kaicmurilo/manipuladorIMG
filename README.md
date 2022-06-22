@@ -22,3 +22,9 @@ no final terá 3 arquivos de saida.
 Faltante: 
 - criar interface gráfica em python 
 - criar comunicação https com node para uso em api e automação. 
+
+
+INSTALADOR EXECUTAVEL
+pip install pyinstaller
+https://www.youtube.com/watch?v=TBdRfrWT7Co
+
