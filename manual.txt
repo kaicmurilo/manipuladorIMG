@@ -7,6 +7,9 @@ ESCREVENDO EM IMAGEM
 https://acervolima.com/como-adicionar-texto-em-uma-imagem-usando-pillow-em-python/#:~:text=A%20Python%20Imaging%20Library%20(PIL,%2C%20PNG%2C%20JPEG%20e%20TIFF.
 pip instalar pillow
 
+INSTALADOR EXECUTAVEL
+pip install pyinstaller
+
 
 EXECUTAR  
 python alterarAssPrompt.py
